@@ -69,3 +69,57 @@ std::wstring Logger::LogFile()
 	wcscat_s(File, L".log");
 	return File;
 }
+
+
+/* Print a seperator line without time stamp */
+VOID Logger::PrintDebugSeperator()
+{
+	std::wstring s = L"\n------------------------------------------------------------------------------------\n\n";
+
+#ifdef _DEBUG
+	std::wfstream outfile;
+	outfile.open(std::wstring(LogDirectory() + L"/" + LogFile()), std::ios_base::app);
+
+	if (outfile.is_open()) {
+		outfile << s;
+		outfile.close();
+	}
+	else {
+		MessageBox(NULL, L"Unable to open log file...", L"Log Error", MB_OK);
+	}
+#endif
+}
+
+/* Private class to check to see if MTail is already running - So we don't open multiple copies during debug */
+BOOL Logger::IsMTailRunning()
+{
+	bool exists = false;
+	PROCESSENTRY32 entry;
+	entry.dwSize = sizeof(PROCESSENTRY32);
+
+	HANDLE snapshot = CreateToolhelp32Snapshot(TH32CS_SNAPPROCESS, NULL);
+
+	if (Process32First(snapshot, &entry))
+		while (Process32Next(snapshot, &entry))
+			if (!_wcsicmp(entry.szExeFile, L"mTAIL.exe"))
+				exists = true;
+
+	CloseHandle(snapshot);
+	return exists;
+}
+
+/* Start MTail from Project or Build Directory - Depends on where ran from */
+VOID Logger::StartMTail()
+{
+	if (IsMTailRunning()) {
+		Logger::PrintLog(L"--MTail failed to start - Already Running\n");
+		return;
+	}
+
+	Logger::PrintLog(L"--Starting MTail\n");
+	WCHAR path[MAX_PATH] = { 0 };
+	GetCurrentDirectoryW(MAX_PATH, path);
+	std::wstring url = path + std::wstring(L"/mTAIL.exe");
+	std::wstring params = L" \"" + LogDirectory() + L"/" + LogFile() + L"\" /start";
+	ShellExecute(0, NULL, url.c_str(), params.c_str(), NULL, SW_SHOWDEFAULT);
+}

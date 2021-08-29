@@ -19,4 +19,14 @@ public:
 
 	static std::wstring LogFile();
 
+	/* Print a line of '-' char's */
+	static VOID PrintDebugSeperator();
+
+	/* Check to see if MTail is already Running */
+	static BOOL IsMTailRunning();
+
+	/* Start MTail Application */
+	static VOID StartMTail();
+
+
 };
