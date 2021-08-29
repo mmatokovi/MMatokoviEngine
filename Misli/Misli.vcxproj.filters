@@ -19,15 +19,36 @@
     <Filter Include="Source\pch">
       <UniqueIdentifier>{fc85d4c0-3529-4b13-abab-f29f831d7f8e}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source\Private\Platform">
+      <UniqueIdentifier>{e43d0a06-42c8-4a52-aad6-7fbb19240c78}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Private\Platform\WIN32">
+      <UniqueIdentifier>{2791de3e-a669-413f-8cef-1363af397646}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Public\Platform">
+      <UniqueIdentifier>{3181780e-cbe0-4c60-9dfb-746052e62a0f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Public\Platform\WIN32">
+      <UniqueIdentifier>{1f31d69b-92b6-4d58-aa8d-8abfaf415e90}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Source\Misli.cpp">
       <Filter>Source\pch</Filter>
     </ClCompile>
+    <ClCompile Include="Source\Platform\WIN32\IApplication.cpp">
+      <Filter>Source\Private\Platform\WIN32</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Source\Misli.h">
       <Filter>Source\pch</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Platform\WIN32\IApplication.h">
+      <Filter>Source\Public\Platform\WIN32</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Platform\WIN32\WinEntry.h">
+      <Filter>Source\Public\Platform\WIN32</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
