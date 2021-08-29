@@ -30,4 +30,6 @@ public:
 
 	static HICON MainIcon() { return inst->m_MainIcon; }
 	static VOID SetMainIcon(UINT id) { LoadIcon(HInstance(), MAKEINTRESOURCE(id)); }
+
+	static WCHAR* BootTime() { return inst->m_BootTime; }
 };
