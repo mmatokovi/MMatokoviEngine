@@ -77,6 +77,7 @@ STRINGTABLE
 BEGIN
     IDS_PERGAMENAME         "BlankProject"
     IDS_WINDOWCLASS         "GameWindow"
+    IDS_SHORTNAME           "BP"
 END
 
 #endif    // Croatian (Croatia) resources

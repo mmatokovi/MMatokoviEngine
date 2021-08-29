@@ -7,3 +7,5 @@
 #define HInstance() GetModuleHandle(NULL)
 
 #include "Misli.h"
+
+#include "Common/Logger.h"

@@ -1,5 +1,5 @@
 /* 
-/*  Filename: Main.cpp									  *
+/*  Filename: WinMain.cpp								  *
 /*  Author: MMatokovi			                          *
 /*  Licence: MIT Licence                                  *
 */ 
