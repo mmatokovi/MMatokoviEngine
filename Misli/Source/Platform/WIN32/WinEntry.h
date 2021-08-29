@@ -7,6 +7,8 @@ INT CALLBACK WinMain(HINSTANCE, HINSTANCE, LPSTR, INT)
 {
 	auto EntryApp = EntryApplication();
 
+	Logger logger;
+
 	EntryApp->Initialize();
 
 	MSG msg = { 0 };

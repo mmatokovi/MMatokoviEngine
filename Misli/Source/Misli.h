@@ -12,3 +12,5 @@
 #else
 	#define MISLI_API __declspec(dllimport)
 #endif
+
+#include "Common/Logger.h"

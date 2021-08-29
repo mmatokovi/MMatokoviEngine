@@ -31,6 +31,12 @@
     <Filter Include="Source\Public\Platform\WIN32">
       <UniqueIdentifier>{1f31d69b-92b6-4d58-aa8d-8abfaf415e90}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source\Private\Common">
+      <UniqueIdentifier>{feb2a125-f73d-4f6d-96fd-2a81068d51d2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Public\Common">
+      <UniqueIdentifier>{e1ffeafc-c99b-4c9a-8fb0-0de1b69d28b4}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Source\Misli.cpp">
@@ -38,6 +44,9 @@
     </ClCompile>
     <ClCompile Include="Source\Platform\WIN32\IApplication.cpp">
       <Filter>Source\Private\Platform\WIN32</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Common\Logger.cpp">
+      <Filter>Source\Private\Common</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -49,6 +58,9 @@
     </ClInclude>
     <ClInclude Include="Source\Platform\WIN32\WinEntry.h">
       <Filter>Source\Public\Platform\WIN32</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Common\Logger.h">
+      <Filter>Source\Public\Common</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
