@@ -63,6 +63,7 @@
       <LanguageStandard_C>stdc17</LanguageStandard_C>
       <PrecompiledHeader>Create</PrecompiledHeader>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>C:\Users\MISLAV\source\repos\MMatokoviEngine\BlankProject\Source;C:\Users\MISLAV\source\repos\MMatokoviEngine\Misli\Source;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -79,6 +80,7 @@
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp17</LanguageStandard>
       <LanguageStandard_C>stdc17</LanguageStandard_C>
+      <AdditionalIncludeDirectories>C:\Users\MISLAV\source\repos\MMatokoviEngine\BlankProject\Source;C:\Users\MISLAV\source\repos\MMatokoviEngine\Misli\Source;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -102,6 +104,11 @@
   </ItemGroup>
   <ItemGroup>
     <Image Include="Content\Icons\mislete.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Misli\Misli.vcxproj">
+      <Project>{581c9916-9977-43e9-9d5f-2ae08bd96127}</Project>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

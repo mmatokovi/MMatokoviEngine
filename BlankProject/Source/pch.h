@@ -5,3 +5,5 @@
 
 #define MAX_NAME_STRING 256
 #define HInstance() GetModuleHandle(NULL)
+
+#include "Misli.h"

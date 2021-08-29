@@ -1,12 +1,13 @@
 #pragma once
+#define ENTRYAPP(x) IApplication* EntryApplication() { return new x; }
 
-class __declspec(dllexport) IApplication {
+class MISLI_API IApplication {
 
 public:
 
 	IApplication();
 
-	virtual ~IApplication() = 0;
+	virtual ~IApplication() {};
 
 public:
 
@@ -14,3 +15,5 @@ public:
 
 	virtual VOID Update() = 0;
 };
+
+IApplication* EntryApplication();
