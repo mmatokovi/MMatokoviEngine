@@ -8,77 +8,132 @@
     <Filter Include="Source">
       <UniqueIdentifier>{273dac73-0d70-469d-b44e-0402bce75d8d}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source\Private">
-      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
-      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
-    </Filter>
-    <Filter Include="Source\Public">
-      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
-      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
-    </Filter>
     <Filter Include="Source\pch">
       <UniqueIdentifier>{fc85d4c0-3529-4b13-abab-f29f831d7f8e}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source\Private\Platform">
-      <UniqueIdentifier>{e43d0a06-42c8-4a52-aad6-7fbb19240c78}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source\Private\Platform\WIN32">
-      <UniqueIdentifier>{2791de3e-a669-413f-8cef-1363af397646}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source\Public\Platform">
-      <UniqueIdentifier>{3181780e-cbe0-4c60-9dfb-746052e62a0f}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source\Public\Platform\WIN32">
-      <UniqueIdentifier>{1f31d69b-92b6-4d58-aa8d-8abfaf415e90}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source\Private\Common">
-      <UniqueIdentifier>{feb2a125-f73d-4f6d-96fd-2a81068d51d2}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source\Public\Common">
-      <UniqueIdentifier>{e1ffeafc-c99b-4c9a-8fb0-0de1b69d28b4}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source\Private\Core">
+    <Filter Include="Source\Core">
       <UniqueIdentifier>{a454cb4a-1628-40dd-a4f1-99893ddbd92c}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source\Public\Core">
-      <UniqueIdentifier>{3496620b-3523-4979-98ae-2d943ae4d910}</UniqueIdentifier>
+    <Filter Include="Source\Core\Public">
+      <UniqueIdentifier>{cca45340-02f4-4287-9b49-2bc8ae4c036a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Core\Private">
+      <UniqueIdentifier>{53de8a92-1807-49a9-97bf-117764209bd6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Core\Classes">
+      <UniqueIdentifier>{96fe33d0-1b76-42d7-9f6a-4ae6a5d82e8b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Engine">
+      <UniqueIdentifier>{4fd2c1a1-0aee-4f2a-854e-0880370d74a0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Engine\Private">
+      <UniqueIdentifier>{598fe0cc-0e17-4181-8313-4b4fc0d83133}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Engine\Public">
+      <UniqueIdentifier>{b5289899-3bfc-4e2a-9058-b1925f92f9ed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Engine\Classes">
+      <UniqueIdentifier>{21abb972-e5c5-4ad4-a63e-6b00d9163362}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Platform">
+      <UniqueIdentifier>{9d17a2f9-3cb0-457e-ab16-d6e414e3c802}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Common">
+      <UniqueIdentifier>{39c46479-3427-4fea-9606-b08f6ab61e44}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Platform\Win32">
+      <UniqueIdentifier>{1f31d69b-92b6-4d58-aa8d-8abfaf415e90}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Platform\Win32\Classes">
+      <UniqueIdentifier>{68ec620f-3094-4f08-aa4c-f07112e608f3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Platform\Win32\Private">
+      <UniqueIdentifier>{031a768e-475f-4019-b599-5fa626a62d93}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Platform\Win32\Public">
+      <UniqueIdentifier>{e8d9f95f-11de-4dd1-ba22-1225a2d0e8c6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Common\Classes">
+      <UniqueIdentifier>{a0a7e76b-4b5b-413d-860c-14909eec4793}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Common\Private">
+      <UniqueIdentifier>{4d2fdb3d-2042-4c17-a959-418a9df87e54}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Common\Public">
+      <UniqueIdentifier>{b0bb81a2-88f9-47af-a003-b28985eb2c45}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Source\Misli.cpp">
       <Filter>Source\pch</Filter>
     </ClCompile>
+    <ClCompile Include="Source\Core\PerGameSettings.cpp">
+      <Filter>Source\Core\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Core\Core.cpp">
+      <Filter>Source\Core\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Core\CoreMinimal.cpp">
+      <Filter>Source\Core\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Core\CoreDefinitions.cpp">
+      <Filter>Source\Core\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Engine\MEngine.cpp">
+      <Filter>Source\Engine\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Engine\Simulation.cpp">
+      <Filter>Source\Engine\Private</Filter>
+    </ClCompile>
     <ClCompile Include="Source\Platform\WIN32\IApplication.cpp">
-      <Filter>Source\Private\Platform\WIN32</Filter>
+      <Filter>Source\Platform\Win32\Private</Filter>
     </ClCompile>
     <ClCompile Include="Source\Common\Logger.cpp">
-      <Filter>Source\Private\Common</Filter>
-    </ClCompile>
-    <ClCompile Include="Source\Core\PerGameSettings.cpp">
-      <Filter>Source\Private\Core</Filter>
+      <Filter>Source\Common\Private</Filter>
     </ClCompile>
     <ClCompile Include="Source\Common\Time.cpp">
-      <Filter>Source\Private\Common</Filter>
+      <Filter>Source\Common\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Common\CmdLineArgs.cpp">
+      <Filter>Source\Common\Private</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Source\Misli.h">
       <Filter>Source\pch</Filter>
     </ClInclude>
+    <ClInclude Include="Source\Core\PerGameSettings.h">
+      <Filter>Source\Core\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Core\Core.h">
+      <Filter>Source\Core\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Core\CoreMinimal.h">
+      <Filter>Source\Core\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Core\CoreDefinitions.h">
+      <Filter>Source\Core\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Engine\MEngine.h">
+      <Filter>Source\Engine\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Engine\Simulation.h">
+      <Filter>Source\Engine\Classes</Filter>
+    </ClInclude>
     <ClInclude Include="Source\Platform\WIN32\IApplication.h">
-      <Filter>Source\Public\Platform\WIN32</Filter>
+      <Filter>Source\Platform\Win32\Classes</Filter>
     </ClInclude>
     <ClInclude Include="Source\Platform\WIN32\WinEntry.h">
-      <Filter>Source\Public\Platform\WIN32</Filter>
+      <Filter>Source\Platform\Win32\Public</Filter>
     </ClInclude>
     <ClInclude Include="Source\Common\Logger.h">
-      <Filter>Source\Public\Common</Filter>
-    </ClInclude>
-    <ClInclude Include="Source\Core\PerGameSettings.h">
-      <Filter>Source\Public\Core</Filter>
+      <Filter>Source\Common\Classes</Filter>
     </ClInclude>
     <ClInclude Include="Source\Common\Time.h">
-      <Filter>Source\Public\Common</Filter>
+      <Filter>Source\Common\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Common\CmdLineArgs.h">
+      <Filter>Source\Common\Public</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
