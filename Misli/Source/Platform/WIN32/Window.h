@@ -10,6 +10,8 @@ namespace Win32 {
 		Window(std::wstring className, std::wstring classTitle, HICON icon, INT width, INT height);
 		~Window();
 
+		virtual VOID Initialize() override;
+
 	private:
 		INT				m_Width;
 		INT				m_Height;

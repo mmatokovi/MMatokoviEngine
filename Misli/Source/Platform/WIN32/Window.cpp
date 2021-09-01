@@ -12,4 +12,15 @@ namespace Win32 {
 	Window::~Window()
 	{
 	}
+	VOID Window::Initialize()
+	{
+		HWND hWnd = CreateWindow(m_Class.c_str(), m_Title.c_str(), WS_OVERLAPPEDWINDOW,
+			CW_USEDEFAULT, 0, m_Width, m_Height, nullptr, nullptr, HInstance(), (void*)this);
+		if (!hWnd) {
+			MessageBox(0, L"Failed to Create Window!.", 0, 0);
+			PostQuitMessage(0);
+		}
+
+		ShowWindow(hWnd, SW_SHOW);
+	}
 }

@@ -1,27 +1,42 @@
 #include "Misli.h"
 #include "SplashScreen.h"
 
-VOID MISLI_API SplashScreen::Open()
-{
-	return VOID MISLI_API();
-}
+namespace SplashScreen {
 
-VOID MISLI_API SplashScreen::Close()
-{
-	return VOID MISLI_API();
-}
+	SplashWindow* m_SplashWindow;
 
-VOID MISLI_API SplashScreen::AddMessage(const WCHAR* message)
-{
-	return VOID MISLI_API();
+	VOID Open()
+	{
+		if (m_SplashWindow != nullptr)
+			return;
+		m_SplashWindow = new SplashWindow();
+	}
+
+	VOID Close()
+	{
+		return VOID MISLI_API();
+	}
+
+	VOID AddMessage(const WCHAR* message)
+	{
+		return VOID MISLI_API();
+	}
 }
 
 SplashWindow::SplashWindow()
 	: Win32::Window(L"SplashScreen", L"SplashScreen", NULL, 500, 600)
 {
 	wcscpy_s(m_outputMessage, L"SplashScreen Starting...");
+	Win32::Window::RegisterNewClass();
+	Win32::Window::Initialize();
 }
 
 SplashWindow::~SplashWindow()
 {
 }
+
+LRESULT SplashWindow::MessageHandler(HWND hwnd, UINT message, WPARAM wParam, LPARAM lParam)
+{
+	return CommonMessageHandler(hwnd, message, wParam, lParam);
+}
+
