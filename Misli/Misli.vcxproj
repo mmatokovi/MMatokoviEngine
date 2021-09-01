@@ -99,8 +99,11 @@
     <ClCompile Include="Source\Core\PerGameSettings.cpp" />
     <ClCompile Include="Source\Engine\MEngine.cpp" />
     <ClCompile Include="Source\Engine\Simulation.cpp" />
+    <ClCompile Include="Source\Engine\SplashScreen.cpp" />
     <ClCompile Include="Source\Misli.cpp" />
     <ClCompile Include="Source\Platform\WIN32\IApplication.cpp" />
+    <ClCompile Include="Source\Platform\WIN32\SubObject.cpp" />
+    <ClCompile Include="Source\Platform\WIN32\Window.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Source\Common\CmdLineArgs.h" />
@@ -112,8 +115,11 @@
     <ClInclude Include="Source\Core\PerGameSettings.h" />
     <ClInclude Include="Source\Engine\MEngine.h" />
     <ClInclude Include="Source\Engine\Simulation.h" />
+    <ClInclude Include="Source\Engine\SplashScreen.h" />
     <ClInclude Include="Source\Misli.h" />
     <ClInclude Include="Source\Platform\WIN32\IApplication.h" />
+    <ClInclude Include="Source\Platform\WIN32\SubObject.h" />
+    <ClInclude Include="Source\Platform\WIN32\Window.h" />
     <ClInclude Include="Source\Platform\WIN32\WinEntry.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
