@@ -17,7 +17,9 @@ VOID MISLI_API SplashScreen::AddMessage(const WCHAR* message)
 }
 
 SplashWindow::SplashWindow()
+	: Win32::Window(L"SplashScreen", L"SplashScreen", NULL, 500, 600)
 {
+	wcscpy_s(m_outputMessage, L"SplashScreen Starting...");
 }
 
 SplashWindow::~SplashWindow()

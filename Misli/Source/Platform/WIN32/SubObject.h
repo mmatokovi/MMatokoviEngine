@@ -12,6 +12,6 @@ namespace Win32 {
 		std::wstring			m_Class;
 		std::wstring			m_Title;
 
-		HICON			m_hIcon;
+		HICON					m_hIcon;
 	};
 }
