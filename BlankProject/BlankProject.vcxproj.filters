@@ -24,21 +24,10 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Source\pch.cpp">
-      <Filter>Source\pch</Filter>
-    </ClCompile>
-    <ClCompile Include="Source\Application.cpp">
-      <Filter>Source\Private</Filter>
-    </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="Source\pch.h">
-      <Filter>Source\pch</Filter>
-    </ClInclude>
     <ClInclude Include="resource.h">
       <Filter>Resources</Filter>
     </ClInclude>
-    <ClInclude Include="Source\Application.h">
+    <ClInclude Include="Source\BlankProject.h">
       <Filter>Source\Public</Filter>
     </ClInclude>
   </ItemGroup>
@@ -51,5 +40,10 @@
     <Image Include="Content\Icons\mislete.ico">
       <Filter>Resources\Icons</Filter>
     </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\BlankProject.cpp">
+      <Filter>Source\Private</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

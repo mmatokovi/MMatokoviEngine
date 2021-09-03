@@ -103,6 +103,7 @@
     <ClCompile Include="Source\Misli.cpp" />
     <ClCompile Include="Source\Platform\WIN32\IApplication.cpp" />
     <ClCompile Include="Source\Platform\WIN32\SubObject.cpp" />
+    <ClCompile Include="Source\Platform\WIN32\Win32Utils.cpp" />
     <ClCompile Include="Source\Platform\WIN32\Window.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -119,6 +120,7 @@
     <ClInclude Include="Source\Misli.h" />
     <ClInclude Include="Source\Platform\WIN32\IApplication.h" />
     <ClInclude Include="Source\Platform\WIN32\SubObject.h" />
+    <ClInclude Include="Source\Platform\WIN32\Win32Utils.h" />
     <ClInclude Include="Source\Platform\WIN32\Window.h" />
     <ClInclude Include="Source\Platform\WIN32\WinEntry.h" />
   </ItemGroup>

@@ -78,6 +78,7 @@ BEGIN
     IDS_PERGAMENAME         "BlankProject"
     IDS_WINDOWCLASS         "GameWindow"
     IDS_SHORTNAME           "BP"
+    IDS_SPLASHURL           "Content\\Images\\BlankProjectSplash.bmp"
 END
 
 #endif    // Croatian (Croatia) resources

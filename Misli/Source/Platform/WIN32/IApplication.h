@@ -22,6 +22,9 @@ namespace Win32 {
 		virtual VOID SetupPerGameSettings() = 0;
 
 		/* Called to Initialize the Application  */
+		virtual VOID PreInitialize() = 0;
+
+		/* Called to Initialize the Application  */
 		virtual VOID Initialize() = 0;
 
 		/* Game Loop - Called on a loop while the Application is running */

@@ -1,6 +1,8 @@
 #include "Misli.h"
 #include "SplashScreen.h"
 
+#include "Platform/Win32/Win32Utils.h"
+
 namespace SplashScreen {
 	
 	#define WM_OUTPUTMESSAGE (WM_USER + 0x0001)
@@ -49,6 +51,8 @@ LRESULT SplashWindow::MessageHandler(HWND hwnd, UINT message, WPARAM wParam, LPA
 		PAINTSTRUCT ps;
 
 		hdc = BeginPaint(hwnd, &ps);
+
+		Win32::Utils::AddBitmap(PerGameSettings::SplashURL(), hdc);
 
 		SetBkMode(hdc, TRANSPARENT);
 		SetTextColor(hdc, RGB(255, 255, 255));
