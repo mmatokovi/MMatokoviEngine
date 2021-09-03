@@ -12,7 +12,7 @@ namespace Win32 {
 
 		virtual VOID Initialize() override;
 
-	private:
+	protected:
 		INT				m_Width;
 		INT				m_Height;
 	};

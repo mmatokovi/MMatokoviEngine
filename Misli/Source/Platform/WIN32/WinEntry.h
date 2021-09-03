@@ -6,8 +6,7 @@
 
 extern Win32::IApplication* EntryApplication();
 
-INT CALLBACK WinMain(HINSTANCE, HINSTANCE, LPSTR, INT)
-{
+INT CALLBACK WinMain(HINSTANCE, HINSTANCE, LPSTR, INT) {
 
 	auto EntryApp = EntryApplication();
 
@@ -17,9 +16,10 @@ INT CALLBACK WinMain(HINSTANCE, HINSTANCE, LPSTR, INT)
 	CmdLineArgs::ReadArguments();
 
 	Logger logger;
-	EntryApp->Initialize();
-
+	
 	SplashScreen::Open();
+
+	EntryApp->Initialize();
 
 	MSG msg = { 0 };
 	while (msg.message != WM_QUIT)
