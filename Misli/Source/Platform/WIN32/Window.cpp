@@ -18,10 +18,9 @@ namespace Win32 {
 		const HWND hDesktop = GetDesktopWindow();
 		GetWindowRect(hDesktop, &desktop);
 
-		RECT R = { 0, 0, m_Width, m_Height };
-		AdjustWindowRect(&R, WS_OVERLAPPEDWINDOW, false);
-		int width = R.right - R.left;
-		int height = R.bottom - R.top;
+		AdjustWindowRect(&desktop, WS_OVERLAPPEDWINDOW, false);
+		int width = desktop.right - desktop.left;
+		int height = desktop.bottom - desktop.top;
 
 		m_Handle = CreateWindow(m_Class.c_str(), m_Title.c_str(),
 			WS_POPUP, ((desktop.right / 2) - (m_Width / 2)), ((desktop.bottom / 2) - (m_Height / 2)), m_Width, m_Height, 0, 0, HInstance(), (void*)this);
